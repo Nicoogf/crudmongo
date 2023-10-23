@@ -5,6 +5,7 @@ import ListaDeUsuarios from './ListaDeUsuarios' ;
 import EditarUsuario from './EditarUsuario' ;
 
 import { BrowserRouter , Routes , Route } from "react-router-dom" ;
+import Nav from './components/Nav';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
   return (
     
       <div>
-        <h1 className='text-red-500'> M . E . R . N</h1>
+       
+       <Nav />
         <BrowserRouter>
           <Routes>
             <Route path='/' element={ <ListaDeUsuarios /> } exact />
